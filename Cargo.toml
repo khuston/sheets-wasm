@@ -1,0 +1,16 @@
+[package]
+name = "sheets-wasm"
+version = "0.1.0"
+authors = ["Kyle Huston <khuston@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false  # Error: no prebuilt wasm-opt binaries are available....
